@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="typing"></h1>
+  
+  <script>
+  
+  const typing = document.getElementById('typing');
+  
+  let typewriter = new Typewriter(typing, { loop: true });
+  
+  typewriter.typeString('안녕하세요!')
+      .pauseFor(2500)
+      .deleteAll()
+      .typeString('FRONT-END 개발자를 꿈꾸는!')
+      .pauseFor(2500)
+      .deleteAll()
+      .typeString('백동현입니다!')
+      .start();
+  </script>
+</body>
+</html>
