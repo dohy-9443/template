@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+body {
+  overflow: hidden; 
+  background: #fff;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.05) 80%, rgba(0,0,0,0.15) 100%);
+  transform-style: preserve-3d;
+}
+
+* {margin: 0; padding: 0;}
+
+ul,li {list-style: none;}
+
+a {text-decoration: none; color: #000;}
+
+input[type='radio'],
+.hide {
+  display: none;
+}
+
+input[type='radio']:checked + section {
+  top: 0;
+}
